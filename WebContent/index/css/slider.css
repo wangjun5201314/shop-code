@@ -1,0 +1,55 @@
+*{
+	margin:0;
+	padding:0;
+}
+#slideshow{
+	/*#给附有id属性的元素添加样式，即ID=slideshow*/
+	height:342px;
+	position:relative;
+	width:100%;
+	z-index:1;
+	/*z-index用来设置元素的堆叠顺序，属性值越大，顺序越在前面*/
+}
+#slideshow ul{
+	height:342px;
+	left:0px;
+	list-style:none outside none;
+	/**/
+	overflow:hidden;
+	/*如果内容超出元素框来设置属性值来如何处理*/
+	position:absolute;
+	top:12px;
+	width:100%;
+}
+#slideshow li{
+	position:absolute;
+	display:none;
+	z-index:10;
+}
+#slideshow li:first-child{
+	display:block;
+	z-index:1000;
+}
+#slideshow .slideActive{
+	z-index:1000;
+}
+#slideshow canvas{
+	display:none;
+	position:absolute;
+	z-index:100;
+}
+#slideshow .arrow{
+	height:50px;
+	width:33px;
+	position:absolute;
+	background:url(../images/arrows.png) no-repeat;
+	top:50%;
+	margin-top:-10px;
+	cursor:pointer;
+	z-index:5000;
+}
+#slideshow .previous{ background-position:left top;left:0px;}
+#slideshow .previous:hover{ background-position:left bottom;}
+
+#slideshow .next{ background-position:right top;right:0px;}
+#slideshow .next:hover{ background-position:right bottom;}
