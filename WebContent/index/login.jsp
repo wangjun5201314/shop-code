@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="/struts-tags" prefix="s" %>
+<%@ taglib uri="/struts-tags" prefix="s" %>  //引用struts2里面唯一的s标签库
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,13 +10,13 @@
 
 <div class="wrap">
 
-<s:action name="header" executeResult="true"/>
+<s:action name="header" executeResult="true"/> //使用action标签可在jsp页面直接调用action，属性值为ture把本结果显本页
 
 <div class="main">
     <div class="content">
     	<div class="login_panel">	
         	<h3>登录已有账户</h3>
-        	<s:actionerror style="color:red;"/>
+        	<s:actionerror style="color:red;"/> //用来发送错误信息给用户
         	<form action="login.action" method="post" id="form_login">
                	用户名 : <input name="user.username" type="text" class="field" placeholder="请输入用户名">
             	密码 : <input name="user.password" type="password" class="field" placeholder="请输入密码">
