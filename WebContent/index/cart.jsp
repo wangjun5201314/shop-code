@@ -10,16 +10,16 @@
 
 <div class="wrap">
 
-<s:action name="header" executeResult="true"/>
+<s:action name="header" executeResult="true"/> // true属性中表明直接在本页面跳转
 
 <div class="main">
     <div class="content">
     	<div class="login_panel"  style="width:600px">	
         	<span style="color:red;"><s:actionmessage/></span>
         	
-        	<s:if test="#session.shopcartList != null">
+        	<s:if test="#session.shopcartList != null"> //struts2标签判断shopcartlist是否为空，#用于jsp，$用于struts
         	
-				<h3>我的购物车</h3>
+				<h3>我的购物车</h3> //配置文件
 				
 				<table class="cart_table">
 				
@@ -29,6 +29,7 @@
 								<a href="detail.action?productid=${product.id}">
 									<img src="../${product.cover}" class="cart_thumb" border="0"/>
 								</a>
+//product id是传送给detail.action(后台)的参数值
 							</td>
 							<td>${product.name}</td>
 							<td>￥${product.price}</td>
@@ -40,7 +41,7 @@
 								<a href="javascript:deletes(${id});">[删除]</a>
 							</td>
 						</tr>			
-					</s:iterator>
+					</s:iterator>//检索当前对象的值
 					
 	          		<tr>
 			            <td colspan="4" class="cart_total"><span class="red">总价: </span></td>
