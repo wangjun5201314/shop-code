@@ -8,3 +8,4 @@
 <body>
 </body>
 </html>
+//struts2+hibernat+sping架构
