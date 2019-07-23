@@ -56,8 +56,10 @@
 					<h2>商品分类</h2>
 					<ul>
 						<s:iterator value="categoryList">
-							<li><a href="productList.action?categoryid=<s:property value="id"/>"><s:property value="name"/></a></li>
-						</s:iterator>
+							<li><a href="productList.action?categoryid=<s:property value="id"/>">
+								<s:property value="name"/></a>
+							</li>
+						</s:iterator>//输出跌代对象（categorylist）的id属性值
     				</ul>
 
  				</div>
