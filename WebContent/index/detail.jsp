@@ -26,7 +26,7 @@
 			
 				<div class="cont-desc span_1_of_2">				
 					<div class="grid images_3_of_2">
-						<img src="../${product.cover}" alt="" />
+						<img src="../${product.cover}" alt="" />//../代表着父级目录
 					</div>
 					<div class="desc span_3_of_2">
 						<h2>${product.name}</h2>
