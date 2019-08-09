@@ -1,0 +1,58 @@
+@charset "utf-8";
+body{
+font: 14px/1.5 "Helveticelvetica, Arial, "Mica Neue", Hrosoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+color: #333;
+background-color: #fff;
+min-width: 1226px;
+}
+.topbar{
+	height: 36px;
+	background: red;
+}	
+.topbar .topnav{
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+    
+	width: 1226px;
+	margin: auto;/*定义元素周围的空间*/
+	/*background-color: yellow;*/
+}
+/*左浮动*/
+.topnav li{
+	float: left;
+}
+/*定义导航栏字体的的内容*/
+.topnav li a{
+     line-height: 36px;
+     border-right: 1px solid #424242;
+     font-size: 12px;
+     padding: 0 4px;
+     color: #b0b0b0;
+}
+/*文字覆盖时改变颜色*/
+.topnav li a:hover{
+	color: white;
+}
+/**去掉某栏的边界线,还有一个权重问题**/
+.topnav li a.bor-n{
+	border: none;
+}
+
+.topnav .shopping-cart{
+	padding:0 20px;/*给该元素适当增加宽度*/
+	background: #454545;
+}
+.topnav .shopping-cart .icon-gowuchekong{
+	line-height: 14px;
+}
+/*给购物车导航添加效果，覆盖出现的字体(是在覆盖的基础上改变a标签的颜色，而不是先进行文字颜色的改变)以及背景颜色*/
+.topnav .shopping-cart:hover{
+     background: white;
+}
+.topnav .shopping-cart li a:hover{
+	background: #ff6700;
+}
+.topnav .shopping-cart:hover a{
+	background: #ff6700;
+}

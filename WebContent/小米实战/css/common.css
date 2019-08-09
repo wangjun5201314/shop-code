@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*文字颜色*/
+.f-c-gray{color: #b0b0b0;}
+.f-c-orange{color: #ff6700;}
+/*背景颜色*/
+.bg-color-o{baseline-color: #ff6700; }/*橙色*/
+.bg-color-g{background-color: #333;}/*深灰色*/
+
+/*浮动*/
+.fl-if{float: left;}
+.fl-rgt{float: right;}
+/*清除浮动*/
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* 边框*/
+.bor-rgt{borfrt-right:none;}
+.bor-none{border: none;}
+
+/*列表标记样式*/
+ul{
+	list-style-type: none;
+}
